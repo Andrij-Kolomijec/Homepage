@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid; */
+}
+
+:root {
+  --shadows: 0px 0px 5px 2px rgba(50, 50, 0, 0.5);
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.trapezoid-container {
+  position: absolute;
+  filter: drop-shadow(0px 2px 5px rgba(50, 50, 0, 0.5));
+  z-index: -1;
+}
+
+.trapezoid-background {
+  clip-path: polygon(0 0, 100% 0, 100% 55%, 0 100%);
+  background-color: rgb(119, 184, 46);
+  top: 0;
+  height: 65vh;
+  width: 100vw;
+}
+
+header {
+  display: flex;
+}
+
+.header-photo {
+  background-color: grey;
+  min-height: 460px;
+  min-width: 400px;
+  margin: 10vh 0 10vh 10vw;
+  box-shadow: var(--shadows);
+  /* position: relative; */
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  /* centering absolutely positioned element */
+  /* position: absolute; */
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 365px;
+}
+
+.about {
+  /* max-width: 50vw; */
+  margin: 130px 200px 130px 0;
+  padding: 30px;
+  background-color: white;
+  box-shadow: var(--shadows);
+  z-index: -1;
+}
