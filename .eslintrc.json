@@ -1,0 +1,23 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb-base",
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "ignorePatterns": ["**/*test.js"],
+    "rules": {
+        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+        "max-classes-per-file": ["error", { "ignoreExpressions": true, "max": 2 }],
+        "no-console": "off",
+        "no-restricted-syntax": "off",
+        "no-param-reassign": "off",
+        "guard-for-in": "off"
+    }
+}
