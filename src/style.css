@@ -51,14 +51,13 @@ header {
   font-weight: bold;
   position: absolute;
   bottom: 0;
-  left: 5px;
   width: 365px;
 }
 
 .about {
   min-height: 330px;
   min-width: 200px;
-  margin: 20vh -1vw 0 0;
+  margin: 17vh -1vw 0 0;
   background-color: antiquewhite;
   box-shadow: var(--shadows);
   font-size: 1rem;
@@ -84,7 +83,8 @@ a {
   transition: transform 0.3s ease-in-out;
 }
 
-.links img:hover {
+.links img:hover,
+.project-links img:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
@@ -100,7 +100,7 @@ main > h2 {
 
 .projects {
   display: grid;
-  grid-template: repeat(auto-fit, minmax(200px, 400px)) / repeat(auto-fit, minmax(100px, 250px));
+  grid-template: repeat(auto-fit, minmax(200px, 400px)) / repeat(auto-fit, minmax(250px, 300px));
   grid-auto-rows: 400px;
   gap: 6vw;
   justify-content: space-evenly;
@@ -111,15 +111,48 @@ main > h2 {
   background: linear-gradient(45deg, rgb(250, 149, 41), rgb(15, 112, 153),  rgb(3, 169, 94));
 }
 
-footer {
-  /* background: radial-gradient(rgb(250, 149, 41), rgb(15, 112, 153),  rgb(3, 169, 94)); */
-  /* align-self: stretch;
+.project h3 {
+  text-align: center;
+}
+
+li {
+  margin-left: 30px;
+}
+
+.project > img {
+  width: 100%;
+  height: 47%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project > img:hover {
+  transform: scale(1.5);
+  object-fit: contain;
+}
+
+.project-headline {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center; */
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.project-links{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  height: 10%;
+}
+
+.project-links img {
+  transition: transform 0.3s ease-in-out;
+  height: 30px;
+}
+
+footer {
   align-self: flex-end;
   margin-top: 7vw;
-  margin-bottom: 7vw;
+  margin-bottom: 3vw;
 }
 
 .contact-info {
@@ -128,11 +161,14 @@ footer {
   gap: 1vw;
 }
 
-/* .footer-photo {
-  min-height: 300px;
-  min-width: 500px;
-  background-color: grey;
-} */
+.contact-info img {
+  height: 20px;
+}
+
+.contact-info > p {
+  display: flex;
+  align-items: center;
+}
 
 .trapezoid-container-footer {
   position: absolute;
@@ -149,8 +185,12 @@ footer {
   width: 100vw;
 }
 
+.icons-source {
+  padding: 15px;
+}
+
 /* for tablets  */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .header-photo {
     min-height: 230px;
     min-width: 200px;
@@ -172,7 +212,7 @@ footer {
 }
 
 /* for mobile phones  */
-@media (max-width: 450px) {
+@media (max-width: 510px) {
   .header-photo {
     min-width: 0vw;
     min-height: 90vw;
