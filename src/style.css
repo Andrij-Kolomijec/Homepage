@@ -107,6 +107,7 @@ main > h2 {
 }
 
 .project {
+  box-shadow: var(--shadows);
   background: linear-gradient(45deg, rgb(250, 149, 41), rgb(15, 112, 153),  rgb(3, 169, 94));
 }
 
