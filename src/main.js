@@ -1,10 +1,10 @@
 import "./style.css";
-import email from "./Icons/email-outline.svg";
+// import email from "./Icons/email-outline.svg";
 import github from "./Icons/github.svg";
 import home from "./Icons/home-account.svg";
 import linkedin from "./Icons/linkedin.svg";
 import open from "./Icons/open-in-new.svg";
-import phone from "./Icons/phone-outline.svg";
+// import phone from "./Icons/phone-outline.svg";
 import battleship from "./Images/battleship.jpg";
 import calculator from "./Images/calculator.jpg";
 import etch from "./Images/etch-and-sketch.jpg";
@@ -14,12 +14,12 @@ import tictactoe from "./Images/tic-tac-toe.jpg";
 import todo from "./Images/todo-list.jpg";
 import weather from "./Images/weather-app.jpg";
 
-document.querySelector(".email").src = email;
+// document.querySelector(".email").src = email;
 document.querySelectorAll(".github").forEach((i) => (i.src = github));
 document.querySelector('link[rel="icon"]').href = home;
 document.querySelectorAll(".linkedin").forEach((i) => (i.src = linkedin));
 document.querySelectorAll(".visit").forEach((i) => (i.src = open));
-document.querySelector(".phone").src = phone;
+// document.querySelector(".phone").src = phone;
 document.querySelector(".battleship").src = battleship;
 document.querySelector(".calculator").src = calculator;
 document.querySelector(".etch").src = etch;
