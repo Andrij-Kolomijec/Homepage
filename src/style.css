@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: 1px solid; */
 }
 
 :root {
@@ -10,7 +9,7 @@
 
 body {
   font-family: 'Times New Roman', Times, serif;
-  background-color: antiquewhite;
+  background-color: rgb(255, 248, 239);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -38,7 +37,7 @@ header {
 }
 
 .header-photo {
-  background-color: grey;
+  background:radial-gradient(grey, rgb(255, 248, 239));;
   min-height: 460px;
   min-width: 400px;
   margin: 10vh 20px 0 -1vw;
@@ -58,7 +57,7 @@ header {
   min-height: 330px;
   min-width: 200px;
   margin: 17vh -1vw 0 0;
-  background-color: antiquewhite;
+  background-color: rgb(255, 248, 239);
   box-shadow: var(--shadows);
   font-size: 1rem;
 }
@@ -162,7 +161,7 @@ footer {
 }
 
 .contact-info img {
-  height: 20px;
+  height: 50px;
 }
 
 .contact-info > p {
