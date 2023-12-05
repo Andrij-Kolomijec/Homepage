@@ -118,14 +118,14 @@ li {
   margin-left: 30px;
 }
 
-.project > img {
+.project > a > img {
   width: 100%;
   height: 47%;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
 
-.project > img:hover {
+.project > a > img:hover {
   transform: scale(1.5);
   object-fit: contain;
 }
